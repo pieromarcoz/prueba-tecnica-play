@@ -10,34 +10,6 @@ Backend desarrollado en Laravel para gestionar productos con arquitectura de ser
 - Arquitectura de Servicios y Repositorios
 - API RESTful
 
-## Estructura del Proyecto
-app/
-├── Http/
-│   ├── Controllers/
-│   │   └── ProductController.php
-│   ├── Requests/
-│   │   ├── StoreProductRequest.php
-│   │   └── UpdateProductRequest.php
-│   └── Responses/
-│       └── ApiResponse.php
-├── Models/
-│   └── Product.php
-├── Services/
-│   └── ProductService.php
-├── Repositories/
-│   ├── Interfaces/
-│   │   └── ProductInterface.php
-│   └── ProductRepository.php
-
-## Flujo de Datos
-
-La request llega al Controller
-El Controller valida los datos usando FormRequests
-El Controller llama al Service apropiado
-El Service utiliza el Repository para operaciones de datos
-El Repository interactúa con el Model
-La respuesta sigue el camino inverso
-ApiResponse formatea la respuesta final
 ## Instalación
 
 1. Clonar el repositorio
@@ -59,9 +31,8 @@ php artisan storage:link
 php artisan migrate --seed
 
 ```
-# Frontend SSR - Prueba Técnica
+# Frontend SSR
 
-Frontend desarrollado con Next.js 14 (App Router) para gestión de productos con Server-Side Rendering.
 
 ## Tecnologías Utilizadas
 
